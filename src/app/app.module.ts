@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppareilComponent } from './appareil-view/appareil/appareil.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppareilService } from './service/appareil.service';
 import { AuthComponent } from './auth/auth.component';
 import { AppareilViewComponent } from './appareil-view/appareil-view.component';
@@ -12,6 +12,9 @@ import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
 import { AuthService } from './service/auth.service';
 import { AuthGuard } from './service/auth-guard.service';
 import { EditAppareilComponent } from './edit-appareil/edit-appareil.component';
+import { UserListComponent } from './user-list/user-list.component';
+import { UserService } from './service/user.service';
+import { NewUserComponent } from './new-user/new-user.component';
 
 @NgModule({
   declarations: [
@@ -21,17 +24,21 @@ import { EditAppareilComponent } from './edit-appareil/edit-appareil.component';
     AppareilViewComponent,
     SingleAppareilComponent,
     FourOhFourComponent,
-    EditAppareilComponent
+    EditAppareilComponent,
+    UserListComponent,
+    NewUserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     AppareilService,
     AuthService,
-    AuthGuard
+    AuthGuard,
+    UserService
   ],
   bootstrap: [AppComponent]
 })

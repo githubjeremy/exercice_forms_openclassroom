@@ -9,8 +9,10 @@ This project is a simple page application (SPA) where you learn the following pu
 
 [go to the tuto -- openclassroom](https://openclassrooms.com/fr/courses/4668271-developpez-des-applications-web-avec-angular/5090131-ecoutez-lutilisateur-avec-les-forms-methode-reactive) for this following purposes :
 
-* Create form
-* get data form with template methode
+* Create form with FormBuilder
+* Use the Validators
+* Create dynamique FormControl
+* get data form with reactive methode
 
 ## Clone the repository
 
